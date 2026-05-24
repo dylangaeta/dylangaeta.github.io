@@ -95,9 +95,9 @@ a:hover { text-decoration-color: var(--forest); }
 
 .hero-photo-wrap { position: relative; }
 .hero-photo {
-  width: 160px; height: 160px;
-  object-fit: cover; object-position: center top;
-  border-radius: 50%;
+  width: 180px; height: 180px;
+  object-fit: cover; object-position: center;
+  border-radius: 14px;
   border: 4px solid var(--bg);
   box-shadow: var(--shadow-md);
   display: block;
@@ -121,6 +121,49 @@ a:hover { text-decoration-color: var(--forest); }
 .bio-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem; }
 .bio-list li { display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.8rem; align-items: start; }
 .bio-emoji { font-size: 1.2rem; line-height: 1.7; }
+
+.edu-mini {
+  list-style: none; padding: 0;
+  margin: 1.4rem 0 0;
+  display: flex; flex-direction: column;
+  border-top: 1px solid var(--border);
+}
+.edu-mini li {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 0 1.2rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.edu-mini li:last-child { border-bottom: 1px solid var(--border); }
+.edu-mini-yr {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; color: var(--forest);
+  text-transform: uppercase;
+}
+.edu-mini-deg {
+  color: var(--text);
+  font-weight: 500;
+}
+.edu-mini-school {
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: right;
+}
+@media (max-width: 700px) {
+  .edu-mini li {
+    grid-template-columns: 56px 1fr;
+  }
+  .edu-mini-school {
+    grid-column: 2;
+    text-align: left;
+    margin-top: 0.15rem;
+  }
+}
 
 /* ── RESEARCH ── */
 #research  { background: var(--surface); }
@@ -384,7 +427,7 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 700px) {
   .hero { grid-template-columns: 1fr; gap: 1.5rem; }
-  .hero-photo { width: 110px; height: 110px; }
+  .hero-photo { width: 140px; height: 140px; }
   .hero-card { padding: 1.8rem 1.4rem; margin-top: -2.5rem; }
   .rg { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
