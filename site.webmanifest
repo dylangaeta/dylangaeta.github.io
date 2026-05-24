@@ -2,8 +2,8 @@
   "name": "Dylan Gaeta, Ph.D.",
   "short_name": "Dylan Gaeta",
   "icons": [
-    { "src": "favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "uploads/earth_favicon_suite/favicon-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "uploads/earth_favicon_suite/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
   ],
   "theme_color": "#2e5c22",
   "background_color": "#e8ede1",
