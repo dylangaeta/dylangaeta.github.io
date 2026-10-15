@@ -397,6 +397,7 @@ a:hover { text-decoration-color: var(--forest); }
   transition: border-color 0.15s, color 0.15s, background 0.15s, transform 0.15s;
 }
 .chip:hover { border-color: var(--forest); color: var(--forest); background: var(--forest-light); transform: translateY(-1px); }
+.rc-link { margin-top: 0.9rem; }
 
 footer {
   text-align: center; padding: 2.5rem;
