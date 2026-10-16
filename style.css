@@ -236,8 +236,8 @@ a:hover { text-decoration-color: var(--forest); }
   .rc-fig:has(.rc-fig-label) { min-height: 160px; }
 }
 .rc:nth-child(2) { border-top-color: var(--forest2); }
-.rc:nth-child(3) { border-top-color: var(--forest2); }
-.rc:nth-child(4) { border-top-color: var(--forest); }
+.rc:nth-child(4) { border-top-color: var(--forest2); }
+.rc:nth-child(5) { border-top-color: var(--forest); }
 .rc-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
 .rc-links a {
   font-size: 0.73rem; font-weight: 500; color: var(--forest); text-decoration: none;
