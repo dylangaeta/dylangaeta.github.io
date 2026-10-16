@@ -197,6 +197,9 @@ a:hover { text-decoration-color: var(--forest); }
 .rc:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .rc-feature { display: grid; grid-template-columns: 280px 1fr; gap: 0; padding: 0; overflow: hidden; align-items: stretch; }
 .rc-feature .rc-body { padding: 1.6rem 1.8rem 1.8rem; }
+.rc-highlight { grid-template-columns: 340px 1fr; background: var(--surface); border-top-width: 4px; }
+.rc-highlight .rc-body { align-self: center; }
+.rc-highlight .rc-body p:not(.rc-num) { font-size: 1.02rem; line-height: 1.75; }
 .rc-fig { background: var(--surface); display: flex; align-items: center; justify-content: center; border-right: 1px solid var(--border); position: relative; padding: 12px; }
 .rc-fig:has(.rc-fig-label)::before { content: ''; position: absolute; inset: 16px; border: 1.5px dashed var(--border); border-radius: 4px; pointer-events: none; }
 .rc-fig:has(.rc-fig-label) { min-height: 220px; padding: 0; }
