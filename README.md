@@ -4,4 +4,4 @@ Postdoctoral Research Associate at CIRES (CU Boulder) and the NOAA Global Monito
 
 🌎 [dylangaeta.com](https://dylangaeta.com) · [dylangaeta.github.io](https://dylangaeta.github.io)
 
-📫 [dylan.gaeta@colorado.edu](mailto:dylan.gaeta@colorado.edu)
+📫 dylan.gaeta [at] colorado [dot] edu
