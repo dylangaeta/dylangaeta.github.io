@@ -380,6 +380,9 @@ body.subpage > section:first-of-type { padding-top: 3.5rem; }
 .news-date { font-family: var(--sans); font-size: 12px; letter-spacing: 0.06em; color: var(--muted); padding-top: 3px; text-transform: uppercase; }
 .news-title { font-family: var(--sans); font-size: 0.93rem; font-weight: 500; margin-bottom: 0.25rem; line-height: 1.42; }
 .news-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+.journal-intro { font-size: 0.95rem; color: var(--muted); margin: -1.2rem 0 2rem; }
+.journal-year { margin-bottom: 2.4rem; }
+.journal-yr { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; color: var(--forest); border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; margin-bottom: 0.2rem; }
 
 /* ── CONTACT ── */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
