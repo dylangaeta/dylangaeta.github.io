@@ -451,3 +451,91 @@ footer {
   .cv-box { flex-direction: column; align-items: flex-start; }
 
 }
+/* ── NEWS TIMELINE ── */
+
+#news { --c-milestone: #2e5c22; --c-paper: #4d8a38; --c-conference: #3f6f8f; --c-fieldwork: #a0662b;
+        --c-teaching: #2f7d73; --c-research: #6b7f3a; --c-outreach: #7b5a8e; --c-award: #b0832a; --c-media: #9a4a3c; }
+
+.tl-controls {
+  position: sticky; top: var(--nav-h, 60px); z-index: 40;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  margin: 0 calc(-1 * clamp(1.5rem,5vw,3rem)) 2rem; padding: 0.75rem clamp(1.5rem,5vw,3rem) 0.8rem;
+}
+.tl-years, .tl-filters { display: flex; gap: 0.35rem; overflow-x: auto; scrollbar-width: none; }
+.tl-years::-webkit-scrollbar, .tl-filters::-webkit-scrollbar { display: none; }
+.tl-years { margin-bottom: 0.55rem; }
+.tl-jump {
+  font-size: 0.74rem; font-weight: 500; letter-spacing: 0.04em; color: var(--muted); text-decoration: none;
+  padding: 0.25rem 0.55rem; border-radius: 20px; white-space: nowrap; transition: color 0.15s, background 0.15s;
+}
+.tl-jump:hover, .tl-jump.is-current { color: var(--forest); background: var(--forest-light); }
+.tl-filter {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--muted); background: transparent; border: 1px solid var(--border); border-radius: 20px;
+  padding: 0.3rem 0.75rem; cursor: pointer; white-space: nowrap; transition: all 0.15s;
+}
+.tl-filter:hover { border-color: var(--forest2); color: var(--forest); }
+.tl-filter.is-active { background: var(--forest); border-color: var(--forest); color: #fff; }
+.tl-filter--milestone.is-active { background: var(--c-milestone); border-color: var(--c-milestone); }
+.tl-filter--paper.is-active { background: var(--c-paper); border-color: var(--c-paper); }
+.tl-filter--conference.is-active { background: var(--c-conference); border-color: var(--c-conference); }
+.tl-filter--fieldwork.is-active { background: var(--c-fieldwork); border-color: var(--c-fieldwork); }
+.tl-filter--teaching.is-active { background: var(--c-teaching); border-color: var(--c-teaching); }
+.tl-filter--research.is-active { background: var(--c-research); border-color: var(--c-research); }
+.tl-filter--outreach.is-active { background: var(--c-outreach); border-color: var(--c-outreach); }
+.tl-filter--award.is-active { background: var(--c-award); border-color: var(--c-award); }
+.tl-filter--media.is-active { background: var(--c-media); border-color: var(--c-media); }
+
+/* Vertical line runs through the dot column (date 64px + half of the 28px dot column) */
+.tl { position: relative; }
+.tl::before { content: ''; position: absolute; top: 0; bottom: 0; left: 78px; width: 2px; background: var(--border); }
+.tl-year { position: relative; scroll-margin-top: calc(var(--nav-h, 60px) + 120px); }
+.tl-year[hidden] { display: none; }
+.tl-year-label { position: relative; margin: 0 0 1.2rem 52px; padding: 1.4rem 0 0; }
+.tl-year-label span {
+  position: relative; display: inline-block; font-family: var(--serif); font-weight: 400; font-size: 1.5rem;
+  color: #fff; background: var(--forest); border-radius: 22px; padding: 0.15rem 0.9rem; line-height: 1.3;
+}
+.tl-item { display: grid; grid-template-columns: 64px 28px minmax(0, 1fr); align-items: start; margin-bottom: 1.1rem; }
+.tl-item[hidden] { display: none; }
+.tl-date { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: right; padding: 1.15rem 0.6rem 0 0; }
+.tl-dot { justify-self: center; margin-top: 1.2rem; width: 12px; height: 12px; border-radius: 50%; background: var(--c, var(--forest)); box-shadow: 0 0 0 4px var(--bg); position: relative; z-index: 1; }
+.tl-card {
+  background: var(--bg); border: 1px solid var(--border); border-left: 3px solid var(--c, var(--forest));
+  border-radius: var(--radius); padding: 0.95rem 1.15rem 0.85rem; box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.tl-card:hover { box-shadow: var(--shadow-md); }
+.tl-tag {
+  display: inline-block; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--c, var(--forest)); background: color-mix(in srgb, var(--c, var(--forest)) 11%, transparent);
+  border-radius: 20px; padding: 0.12rem 0.55rem; margin-bottom: 0.45rem;
+}
+.tl-title { font-family: var(--sans); font-size: 1rem; font-weight: 600; line-height: 1.4; color: var(--text); margin-bottom: 0.35rem; }
+.tl-bullets { list-style: disc; padding-left: 1.1rem; margin: 0 0 0.5rem; }
+.tl-bullets li { font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.2rem; }
+.tl-bullets li::marker { color: var(--c, var(--forest2)); }
+.tl-meta { font-size: 0.76rem; color: var(--muted); line-height: 1.55; border-top: 1px dashed var(--border); padding-top: 0.45rem; }
+.tl-empty { color: var(--muted); font-size: 0.9rem; padding: 1rem 0; }
+
+.tl-item[data-cat="milestone"]  { --c: var(--c-milestone); }
+.tl-item[data-cat="paper"]      { --c: var(--c-paper); }
+.tl-item[data-cat="conference"] { --c: var(--c-conference); }
+.tl-item[data-cat="fieldwork"]  { --c: var(--c-fieldwork); }
+.tl-item[data-cat="teaching"]   { --c: var(--c-teaching); }
+.tl-item[data-cat="research"]   { --c: var(--c-research); }
+.tl-item[data-cat="outreach"]   { --c: var(--c-outreach); }
+.tl-item[data-cat="award"]      { --c: var(--c-award); }
+.tl-item[data-cat="media"]      { --c: var(--c-media); }
+
+@media (max-width: 700px) {
+  .tl::before { left: 9px; }
+  .tl-year-label { margin-left: 0; }
+  .tl-item { grid-template-columns: 20px minmax(0, 1fr); grid-template-areas: "dot date" "dot card"; column-gap: 0.6rem; }
+  .tl-dot { grid-area: dot; margin-top: 0.25rem; }
+  .tl-date { grid-area: date; text-align: left; padding: 0 0 0.3rem; }
+  .tl-card { grid-area: card; }
+}
+@media (min-width: 701px) {
+  .tl-years, .tl-filters { flex-wrap: wrap; overflow: visible; }
+}
