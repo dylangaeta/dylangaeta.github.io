@@ -164,6 +164,8 @@ a:hover { text-decoration-color: var(--forest); }
 #education { background: var(--bg); }
 #cv { background: var(--surface); }
 #news { background: var(--bg); }
+#presentations { background: var(--surface); }
+body.subpage > section:first-of-type { padding-top: 3.5rem; }
 #contact { background: var(--surface); }
 .research-focus {
   background: var(--bg);
@@ -197,6 +199,10 @@ a:hover { text-decoration-color: var(--forest); }
 .rc:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .rc-feature { display: grid; grid-template-columns: 280px 1fr; gap: 0; padding: 0; overflow: hidden; align-items: stretch; }
 .rc-feature .rc-body { padding: 1.6rem 1.8rem 1.8rem; }
+.theme-head { font-family: var(--serif); font-weight: 400; font-size: 1.7rem; line-height: 1.2; color: var(--text); margin: 3.2rem 0 1.1rem; }
+.research-focus + .theme-head { margin-top: 0; }
+.theme-lead { font-size: 0.95rem; line-height: 1.78; margin: -0.3rem 0 1.4rem; }
+.theme-lead strong { font-weight: 600; }
 .rc-highlight { grid-template-columns: 340px 1fr; background: var(--surface); border-top-width: 4px; }
 .rc-highlight .rc-body { align-self: center; }
 .rc-highlight .rc-body p:not(.rc-num) { font-size: 1.02rem; line-height: 1.75; }
