@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=7" />
+  <link rel="stylesheet" href="style.css?v=9" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="uploads/earth_favicon_suite/favicon.ico" />
@@ -32,6 +32,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="uploads/earth_favicon_suite/apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#2e5c22" />
+  <link rel="alternate" type="application/rss+xml" title="Dylan Gaeta: News" href="https://dylangaeta.com/feed.xml" />
 </head>
 <body class="subpage">
 
@@ -54,6 +55,10 @@
     <span class="eyebrow fade-up">News</span>
     <p class="journal-intro fade-up">A running log of my research, fieldwork, conferences, teaching, and milestones.</p>
     <div class="tl-controls">
+      <div class="tl-search-row">
+        <input class="tl-search" type="search" placeholder="Search the timeline (e.g. methyl bromide, AGU, Death Valley)" aria-label="Search the timeline" />
+        <a class="tl-rss" href="feed.xml" title="RSS feed">RSS</a>
+      </div>
       <div class="tl-years" role="navigation" aria-label="Jump to year">
       <a class="tl-jump" href="#y2026">2026</a>
       <a class="tl-jump" href="#y2025">2025</a>
@@ -72,39 +77,64 @@
       <a class="tl-jump" href="#y2012">2012</a>
       </div>
       <div class="tl-filters" role="group" aria-label="Filter by type">
-      <button class="tl-filter is-active" type="button" data-cat="all">All</button>
-      <button class="tl-filter tl-filter--milestone" type="button" data-cat="milestone">Milestone</button>
-      <button class="tl-filter tl-filter--paper" type="button" data-cat="paper">Paper</button>
-      <button class="tl-filter tl-filter--conference" type="button" data-cat="conference">Conference</button>
-      <button class="tl-filter tl-filter--fieldwork" type="button" data-cat="fieldwork">Fieldwork</button>
-      <button class="tl-filter tl-filter--teaching" type="button" data-cat="teaching">Teaching</button>
-      <button class="tl-filter tl-filter--research" type="button" data-cat="research">Research</button>
-      <button class="tl-filter tl-filter--outreach" type="button" data-cat="outreach">Outreach</button>
-      <button class="tl-filter tl-filter--award" type="button" data-cat="award">Award</button>
-      <button class="tl-filter tl-filter--media" type="button" data-cat="media">Media</button>
+      <button class="tl-filter is-active" type="button" data-cat="all">All <span class="tl-count">78</span></button>
+      <button class="tl-filter tl-filter--milestone" type="button" data-cat="milestone">Milestone <span class="tl-count">14</span></button>
+      <button class="tl-filter tl-filter--paper" type="button" data-cat="paper">Paper <span class="tl-count">10</span></button>
+      <button class="tl-filter tl-filter--conference" type="button" data-cat="conference">Conference <span class="tl-count">18</span></button>
+      <button class="tl-filter tl-filter--fieldwork" type="button" data-cat="fieldwork">Fieldwork <span class="tl-count">5</span></button>
+      <button class="tl-filter tl-filter--teaching" type="button" data-cat="teaching">Teaching <span class="tl-count">5</span></button>
+      <button class="tl-filter tl-filter--research" type="button" data-cat="research">Research <span class="tl-count">8</span></button>
+      <button class="tl-filter tl-filter--outreach" type="button" data-cat="outreach">Service &amp; outreach <span class="tl-count">11</span></button>
+      <button class="tl-filter tl-filter--award" type="button" data-cat="award">Award <span class="tl-count">5</span></button>
+      <button class="tl-filter tl-filter--media" type="button" data-cat="media">Media <span class="tl-count">2</span></button>
       </div>
     </div>
     <div class="tl">
     <div class="tl-year" id="y2026">
       <h2 class="tl-year-label"><span>2026</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-agu26-two-first-author-posters-on-snow-drought-and-the-carbo" data-cat="conference" data-when="2026-12-10">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
-          <h3 class="tl-title">AGU26 poster accepted: winter snow drought and growing-season carbon fluxes</h3>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-agu26-two-first-author-posters-on-snow-drought-and-the-carbo" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">AGU26: two first-author posters on snow drought and the carbon cycle</h3>
           <ul class="tl-bullets">
-            <li>Accepted as a poster: <em>Winter Snow Drought Impacts on Growing-Season Photosynthesis and Carbon Flux Anomalies in the Western United States</em>.</li>
-            <li>Also a co-author on Hanyu Liu's AGU26 abstract on Alaskan wetland methane fluxes.</li>
+            <li>Both posters are from my postdoc work, in the same Thursday afternoon poster hall:</li>
+            <li><a href="https://agu.confex.com/agu/agu26/meetingapp.cgi/Paper/2085961" target="_blank" rel="noopener"><em>Winter Snow Drought Impacts on Growing-Season Photosynthesis and Carbon Flux Anomalies in the Western United States</em></a>: evaluating the 2025–2026 warm snow drought and historical analogs against a 2000–2024 climatology, using SiB4 with MODIS, OCO-2/3 SIF, ECOSTRESS, NOAA GGGRN, ERA5-Land, GFED, PRISM, and CarbonTracker, with Aleya Kaushik, Bharat Rastogi, Lori Bruhwiler, and John Miller.</li>
+            <li><a href="https://agu.confex.com/agu/agu26/meetingapp.cgi/Paper/2095844" target="_blank" rel="noopener"><em>Optimization of SiB4 Biophysical Parameters by Plant Functional Type Using Multi-Stream Observational Constraints and an Ensemble Kalman Smoother</em></a>: jointly optimizing ~15 drought-relevant SiB4 parameters across ~15 plant functional types in the Western U.S., with Aleya Kaushik, Bharat Rastogi, Ashley Pera, Lori Bruhwiler, and John Miller.</li>
+            <li>Also a co-author on Hanyu Liu's abstract, <a href="https://agu.confex.com/agu/agu26/meetingapp.cgi/Paper/2074420" target="_blank" rel="noopener"><em>Atmospheric Observations Reveal Alaskan Wetland Methane Fluxes Are Up to Threefold Higher Than Process-Based Model Estimates</em></a>.</li>
           </ul>
-          <p class="tl-meta">Thursday, December 10, 2026 &nbsp;·&nbsp; Session B43I: Consequences of Drought and Heat Stress for Terrestrial Vegetation &nbsp;·&nbsp; Moscone Center, <em>San Francisco, CA</em></p>
+          <p class="tl-meta">Thursday, December 10, 2026 &nbsp;·&nbsp; Sessions B43I and GC43J &nbsp;·&nbsp; Moscone Center, <em>San Francisco, CA</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-launched-snowdrought-org" data-cat="research">
+        <div class="tl-date">Oct</div>
+        <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2026-launched-snowdrought-org" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">Launched snowdrought.org</h3>
+          <ul class="tl-bullets">
+            <li>Registered the domain on October 2 and launched <a href="https://snowdrought.org" target="_blank" rel="noopener">snowdrought.org</a>, the Western US Climate and Snow Drought Explorer.</li>
+            <li>An interactive research dashboard with maps, time series, seasonal cycles, and cross-product anomalies of snow, water, carbon, and vegetation across the Western U.S. (1990–2026).</li>
+            <li>Built from the same multi-dataset analysis behind my postdoc research on snow drought and the carbon cycle.</li>
+          </ul>
+          <p class="tl-meta"><em>CIRES &amp; NOAA Global Monitoring Laboratory</em></p>
+        </div>
+      </article>
+      <article class="tl-item" id="2026-cires-science-summit" data-cat="conference">
         <div class="tl-date">Oct</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-cires-science-summit" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">CIRES Science Summit</h3>
           <ul class="tl-bullets">
             <li>Spent the day at the <a href="https://ciresevents.colorado.edu/sciencesummit" target="_blank" rel="noopener">CIRES Science Summit</a>, an institute-wide meeting built around strengthening collaborations across CIRES divisions.</li>
@@ -112,11 +142,14 @@
           <p class="tl-meta"><em>University of Colorado Boulder</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2026-paper-published-u-s-oil-and-gas-methane-intensity-2019-2024" data-cat="paper">
         <div class="tl-date">Oct</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2026-paper-published-u-s-oil-and-gas-methane-intensity-2019-2024" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: U.S. oil and gas methane intensity, 2019–2024</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.1038/s43247-026-04039-0" target="_blank" rel="noopener">U.S. oil and gas methane emission intensity declined 2019–2024 with little indication of federal policy impact</a> came out in <em>Communications Earth &amp; Environment</em>.</li>
@@ -125,11 +158,29 @@
           <p class="tl-meta">A Chen, W S Daniels, Z Huang, A P Ravikumar, S M Jordaan, Z Zhang, L Feng, H Liu, L T Murray, X Yu, <strong>D C Gaeta</strong>, K L Morgan, J Yuan, S M Miller &nbsp;·&nbsp; <em>Commun. Earth Environ.</em> 7, 813</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2026-peer-reviewer-for-environmental-science-technology" data-cat="outreach">
+        <div class="tl-date">Aug</div>
+        <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2026-peer-reviewer-for-environmental-science-technology" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">Peer reviewer for Environmental Science &amp; Technology</h3>
+          <ul class="tl-bullets">
+            <li>Reviewed a manuscript for <em>Environmental Science &amp; Technology</em>; the editor's decision went out on August 5.</li>
+          </ul>
+          <p class="tl-meta"><em>American Chemical Society</em></p>
+        </div>
+      </article>
+      <article class="tl-item" id="2026-preprint-posted-progress-toward-china-s-methane-goals" data-cat="paper">
         <div class="tl-date">Jul</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2026-preprint-posted-progress-toward-china-s-methane-goals" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Preprint posted: progress toward China's methane goals</h3>
           <ul class="tl-bullets">
             <li>We posted <a href="https://arxiv.org/abs/2607.16931" target="_blank" rel="noopener">Satellite-based emissions estimate indicates progress toward China's methane mitigation goals</a> to arXiv; it is in review at <em>Communications Earth &amp; Environment</em>.</li>
@@ -138,11 +189,14 @@
           <p class="tl-meta">Z Huang, A Chen, L Feng, W S Daniels, <strong>D C Gaeta</strong>, K L Morgan, L T Murray, X Yu, B F Hobbs, S M Miller &nbsp;·&nbsp; <em>arXiv:2607.16931</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-oco-2-v11-mip-modeling-workshop" data-cat="conference">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-oco-2-v11-mip-modeling-workshop" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">OCO-2 v11 MIP modeling workshop</h3>
           <ul class="tl-bullets">
             <li>Joined the <a href="https://gml.noaa.gov/ccgg/OCO2_v11mip/" target="_blank" rel="noopener">OCO-2 v11 Model Intercomparison Project (MIP)</a> modeling workshop with the atmospheric CO&#8322; flux inversion groups that assimilate OCO-2 retrievals.</li>
@@ -151,24 +205,30 @@
           <p class="tl-meta"><em>Boulder, CO</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-gmac-2026-poster-methyl-bromide-emissions" data-cat="conference">
         <div class="tl-date">May</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-gmac-2026-poster-methyl-bromide-emissions" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">GMAC 2026 poster: methyl bromide emissions</h3>
           <ul class="tl-bullets">
-            <li>Presented <em>A decline but no cessation of methyl bromide emissions from the United States over 2007–2018</em> at <a href="https://gml.noaa.gov/gmac/agenda.html" target="_blank" rel="noopener">GMAC 2026</a>, the 53rd NOAA Global Monitoring Annual Conference.</li>
+            <li>Presented <em>A decline but no cessation of methyl bromide emissions from the United States over 2007–2018</em> at <a href="https://gml.noaa.gov/gmac/agenda.html" target="_blank" rel="noopener">GMAC 2026</a>, the 53rd NOAA Global Monitoring Annual Conference (<a href="https://gml.noaa.gov/gmac/GMAC_2026_Abstract_Volume_v5_20260511.pdf" target="_blank" rel="noopener">abstract volume</a>).</li>
             <li>Used tall tower, observatory, and aircraft flask-sample measurements of CH&#8323;Br from the NOAA GGGRN with a geostatistical inverse model to estimate U.S. emissions across the Montreal Protocol phase-out years.</li>
           </ul>
           <p class="tl-meta">May 19–20, 2026 &nbsp;·&nbsp; Session P2: Ozone, Particulate Matter, and Air Quality &nbsp;·&nbsp; NOAA GML, <em>Boulder, CO</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-cires-rendezvous-poster" data-cat="conference">
         <div class="tl-date">May</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-cires-rendezvous-poster" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">CIRES Rendezvous poster</h3>
           <ul class="tl-bullets">
             <li>Presented <em>A decline in U.S. methyl bromide emissions throughout 2007–2021</em> at the <a href="https://ciresevents.colorado.edu/rendezvous" target="_blank" rel="noopener">21st annual CIRES Rendezvous</a>, CIRES's institute-wide science symposium.</li>
@@ -177,11 +237,14 @@
           <p class="tl-meta">May 14, 2026 &nbsp;·&nbsp; Environmental Monitoring and Observations session &nbsp;·&nbsp; <em>Boulder, CO</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2026-johns-hopkins-science-diplomacy-summit" data-cat="conference">
         <div class="tl-date">Apr</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2026-johns-hopkins-science-diplomacy-summit" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Johns Hopkins Science Diplomacy Summit</h3>
           <ul class="tl-bullets">
             <li>Attended the third annual Johns Hopkins Science Diplomacy Summit, which brought together government officials, researchers, and industry on AI, quantum, climate innovation, health, space, Arctic science, and research security.</li>
@@ -189,11 +252,14 @@
           <p class="tl-meta">April 13–14, 2026 &nbsp;·&nbsp; Johns Hopkins University Bloomberg Center, <em>Washington, D.C.</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2026-started-my-postdoc-at-cires-and-noaa-gml" data-cat="milestone">
         <div class="tl-date">Mar</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2026-started-my-postdoc-at-cires-and-noaa-gml" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started my postdoc at CIRES and NOAA GML</h3>
           <ul class="tl-bullets">
             <li>Joined CIRES and the NOAA Global Monitoring Laboratory as a Postdoctoral Research Associate, working with Dr. Aleya Kaushik on a NOAA/NIDIS-funded project.</li>
@@ -203,11 +269,31 @@
           <p class="tl-meta"><em>University of Colorado Boulder &amp; NOAA GML, Boulder, CO</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2026-ccst-structural-fumigation-report-published" data-cat="outreach">
+        <div class="tl-date">Feb</div>
+        <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2026-ccst-structural-fumigation-report-published" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">CCST structural fumigation report published</h3>
+          <ul class="tl-bullets">
+            <li>The California Council on Science and Technology released its <a href="https://ccst.us/reports/fumigant-use-in-california-and-an-assessment-of-available-alternatives-phase-ii-report-on-structural-fumigation-with-sulfuryl-fluoride/" target="_blank" rel="noopener">Phase II report on structural fumigation with sulfuryl fluoride</a>, prepared for the California Department of Pesticide Regulation.</li>
+            <li>The report cites our 2024 paper and includes a figure of U.S. SO&#8322;F&#8322; emissions for 2015–2019 adapted from Gaeta et al. (2024), courtesy of me.</li>
+            <li>I had been invited to peer review its emissions content the previous June.</li>
+          </ul>
+          <p class="tl-meta">February 3, 2026 &nbsp;·&nbsp; <em>California Council on Science and Technology</em></p>
+        </div>
+      </article>
+      <article class="tl-item" id="2026-ph-d-complete" data-cat="milestone">
         <div class="tl-date">Feb</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2026-ph-d-complete" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Ph.D. complete</h3>
           <ul class="tl-bullets">
             <li>Officially completed my Ph.D. in Geography &amp; Environmental Engineering at Johns Hopkins, six years after starting in the Greenhouse Gas Lab.</li>
@@ -215,11 +301,14 @@
           <p class="tl-meta">Advisor: Prof. Scot M. Miller &nbsp;·&nbsp; <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2026-offer-for-the-cires-noaa-gml-postdoc" data-cat="milestone">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2026-offer-for-the-cires-noaa-gml-postdoc" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Offer for the CIRES/NOAA GML postdoc</h3>
           <ul class="tl-bullets">
             <li>Had a short follow-up call with Dr. Aleya Kaushik on January 7 and got the good news about the carbon cycle modeling postdoc.</li>
@@ -228,11 +317,14 @@
           <p class="tl-meta"><em>CIRES &amp; NOAA Global Monitoring Laboratory</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2026-paper-published-arctic-and-boreal-methane-fluxes" data-cat="paper">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2026-paper-published-arctic-and-boreal-methane-fluxes" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: Arctic and boreal methane fluxes</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.5194/acp-26-1229-2026" target="_blank" rel="noopener">Methane fluxes from Arctic &amp; boreal North America: comparisons between process-based estimates and atmospheric observations</a> came out in <em>Atmospheric Chemistry and Physics</em>.</li>
@@ -244,11 +336,29 @@
     </div>
     <div class="tl-year" id="y2025">
       <h2 class="tl-year-label"><span>2025</span></h2>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2025-agu25-co-author-on-global-wetland-methane" data-cat="conference">
+        <div class="tl-date">Dec</div>
+        <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2025-agu25-co-author-on-global-wetland-methane" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">AGU25: co-author on global wetland methane</h3>
+          <ul class="tl-bullets">
+            <li>Co-author on Ao Chen's AGU25 abstract, <a href="https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1877610" target="_blank" rel="noopener"><em>Spatial and Temporal Distribution of Global Wetland Methane Emissions During 2019–2020 Estimated from Satellite Observations</em></a>, the same month the paper came out in <em>JGR Atmospheres</em>.</li>
+          </ul>
+          <p class="tl-meta"><em>AGU Fall Meeting 2025</em></p>
+        </div>
+      </article>
+      <article class="tl-item" id="2025-interviewed-for-the-cires-noaa-gml-carbon-cycle-modeling-pos" data-cat="milestone">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2025-interviewed-for-the-cires-noaa-gml-carbon-cycle-modeling-pos" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Interviewed for the CIRES/NOAA GML carbon cycle modeling postdoc</h3>
           <ul class="tl-bullets">
             <li>Invited on December 4 to interview for the CIRES/NOAA Global Monitoring Laboratory Carbon Cycle Modeling Postdoctoral Associate position, a few weeks after my defense.</li>
@@ -257,11 +367,14 @@
           <p class="tl-meta"><em>Virtual</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2025-paper-published-global-wetland-methane-from-satellites" data-cat="paper">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2025-paper-published-global-wetland-methane-from-satellites" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: global wetland methane from satellites</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.1029/2025JD044354" target="_blank" rel="noopener">Spatial and temporal distribution of global wetland methane emissions during 2019–2020 estimated from satellite observations</a> came out in <em>JGR Atmospheres</em>, led by Ao Chen.</li>
@@ -269,11 +382,14 @@
           <p class="tl-meta">A Chen, Z Zhang, B Poulter, L Feng, H Liu, L T Murray, X Yu, Z Huang, <strong>D C Gaeta</strong>, K L Morgan, Q Zhu, S M Miller &nbsp;·&nbsp; <em>JGR Atmospheres</em> 130, e2025JD044354</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2025-defended-my-dissertation" data-cat="milestone">
         <div class="tl-date">Nov</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2025-defended-my-dissertation" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Defended my dissertation</h3>
           <ul class="tl-bullets">
             <li>Defended <em>U.S. emissions of trace gas air pollutants inferred from a long-term atmospheric measurement network: from fumigants to fossil fuels</em>.</li>
@@ -286,11 +402,14 @@
           <p class="tl-meta">Advisor: Prof. Scot M. Miller &nbsp;·&nbsp; Department of Environmental Health &amp; Engineering, <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2025-paper-published-the-chiwis-instrument" data-cat="paper">
         <div class="tl-date">Nov</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2025-paper-published-the-chiwis-instrument" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: the ChiWIS instrument</h3>
           <ul class="tl-bullets">
             <li>The instrument paper for the Chicago Water Isotope Spectrometer, <a href="https://doi.org/10.5194/amt-18-6465-2025" target="_blank" rel="noopener">The airborne Chicago Water Isotope Spectrometer</a>, came out in <em>Atmospheric Measurement Techniques</em>.</li>
@@ -299,11 +418,14 @@
           <p class="tl-meta">B W Clouser et al., including <strong>D C Gaeta</strong> &nbsp;·&nbsp; <em>AMT</em> 18, 6465–6491</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2025-airdc-workshop-hosted-at-johns-hopkins" data-cat="conference">
         <div class="tl-date">Summer</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2025-airdc-workshop-hosted-at-johns-hopkins" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AIRDC workshop, hosted at Johns Hopkins</h3>
           <ul class="tl-bullets">
             <li>Attended the 3rd Annual Greater Washington, D.C. <a href="https://science.gmu.edu/events/airdc" target="_blank" rel="noopener">Air Quality Research and Development Consortium (AIRDC)</a> Workshop, this year hosted by Johns Hopkins in Baltimore.</li>
@@ -311,11 +433,14 @@
           <p class="tl-meta"><em>Johns Hopkins University, Baltimore, MD</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2025-invited-to-peer-review-a-california-council-on-science-and-t" data-cat="outreach">
         <div class="tl-date">Jun</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2025-invited-to-peer-review-a-california-council-on-science-and-t" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Invited to peer review a California Council on Science and Technology report</h3>
           <ul class="tl-bullets">
             <li>Agreed to peer review the <a href="https://ccst.us/reports/fumigant-use-in-california/" target="_blank" rel="noopener">CCST</a> report on structural fumigation with sulfuryl fluoride in California and an assessment of available alternatives.</li>
@@ -325,11 +450,14 @@
           <p class="tl-meta">May 30 – June 9, 2025 &nbsp;·&nbsp; <em>California Council on Science and Technology</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2025-started-at-scale-ai" data-cat="milestone">
         <div class="tl-date">Apr</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2025-started-at-scale-ai" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started at Scale AI</h3>
           <ul class="tl-bullets">
             <li>Began working as a Human Frontier Collective Specialist (GenAI).</li>
@@ -338,11 +466,14 @@
           <p class="tl-meta"><em>Scale AI</em> (remote)</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="fieldwork">
+      <article class="tl-item" id="2025-death-valley-field-course-year-four" data-cat="fieldwork">
         <div class="tl-date">Spring</div>
         <div class="tl-dot tl-dot--fieldwork" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+            <a class="tl-permalink" href="#2025-death-valley-field-course-year-four" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Death Valley field course, year four</h3>
           <ul class="tl-bullets">
             <li>Co-led our 8-day <em>Case Studies in Climate Change</em> field course (EN.570.321) with Prof. Scot Miller for ten undergraduates.</li>
@@ -352,11 +483,14 @@
           <p class="tl-meta">With Prof. Scot M. Miller &nbsp;·&nbsp; <em>Death Valley National Park and the Eastern Sierra, California</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2025-graduate-board-oral-gbo-exam" data-cat="milestone">
         <div class="tl-date">Mar</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2025-graduate-board-oral-gbo-exam" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Graduate Board Oral (GBO) exam</h3>
           <ul class="tl-bullets">
             <li>Presented my dissertation proposal to my GBO committee on March 3.</li>
@@ -368,25 +502,31 @@
     </div>
     <div class="tl-year" id="y2024">
       <h2 class="tl-year-label"><span>2024</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2024-agu-2024-talk-on-c-c-alkanes-poster-on-methyl-bromide" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2024-agu-2024-talk-on-c-c-alkanes-poster-on-methyl-bromide" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AGU 2024: talk on C&#8323;–C&#8325; alkanes, poster on methyl bromide</h3>
           <ul class="tl-bullets">
-            <li>Gave an oral talk, <em>Emissions of C&#8323;–C&#8325; alkanes from the U.S. fossil fuel industry and implications for air quality</em> (A42E-06).</li>
-            <li>Presented a poster, <em>U.S. emissions of methyl bromide have declined since the Montreal Protocol phase-out, but not to zero</em> (A21H-1855).</li>
+            <li>Gave an oral talk, <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1696310" target="_blank" rel="noopener"><em>Emissions of C&#8323;–C&#8325; alkanes from the U.S. fossil fuel industry and implications for air quality</em></a> (A42E-06).</li>
+            <li>Presented a poster, <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1695115" target="_blank" rel="noopener"><em>U.S. emissions of methyl bromide have declined since the Montreal Protocol phase-out, but not to zero</em></a> (A21H-1855).</li>
             <li>Two dissertation chapters presented at the same meeting.</li>
           </ul>
           <p class="tl-meta">Sessions: Emissions and Air Quality Impacts of Atmospheric Pollutants from Oil, Gas, and Coal Operations; General Atmospheric Chemistry &nbsp;·&nbsp; <em>Washington, D.C.</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2024-bsec-annual-meeting" data-cat="conference">
         <div class="tl-date">Nov</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2024-bsec-annual-meeting" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">BSEC annual meeting</h3>
           <ul class="tl-bullets">
             <li>Attended the annual meeting of the <a href="https://bsec.21cc.jhu.edu/" target="_blank" rel="noopener">Baltimore Social-Environmental Collaborative (BSEC)</a>, the DOE-funded Urban Integrated Field Lab led by Johns Hopkins.</li>
@@ -395,11 +535,14 @@
           <p class="tl-meta">November 16, 2024 &nbsp;·&nbsp; Old Goucher neighborhood, <em>Baltimore, MD</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2024-paper-published-oco-2-and-the-seasonal-carbon-cycle" data-cat="paper">
         <div class="tl-date">Oct</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2024-paper-published-oco-2-and-the-seasonal-carbon-cycle" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: OCO-2 and the seasonal carbon cycle</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.1016/j.rse.2024.114326" target="_blank" rel="noopener">The Orbiting Carbon Observatory-2 (OCO-2) and in situ CO&#8322; data suggest a larger seasonal amplitude of the terrestrial carbon cycle compared to many dynamic global vegetation models</a> came out in <em>Remote Sensing of Environment</em>, led by Ruixue Lei.</li>
@@ -407,11 +550,14 @@
           <p class="tl-meta">R Lei, J Poe, D Huntzinger, J Liu, S Sitch, D F Baker, L Feng, <strong>D C Gaeta</strong>, Z Huang, S M Miller &nbsp;·&nbsp; <em>RSE</em> 312, 114326</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2024-paper-published-u-s-ethane-emissions" data-cat="paper">
         <div class="tl-date">Sep</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2024-paper-published-u-s-ethane-emissions" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: U.S. ethane emissions</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.1021/acs.est.4c00380" target="_blank" rel="noopener">U.S. ethane emissions and trends estimated from atmospheric observations</a> came out in <em>Environmental Science &amp; Technology</em>, led by Mingyang Zhang.</li>
@@ -419,11 +565,14 @@
           <p class="tl-meta">M Zhang, I J Vimont, S M Jordaan, L Hu, K McKain, M Crotwell, <strong>D C Gaeta</strong>, S M Miller &nbsp;·&nbsp; <em>ES&amp;T</em> 58, 15539–15550</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="award">
+      <article class="tl-item" id="2024-outstanding-doctoral-ta-award" data-cat="award">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--award" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--award">Award</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--award">Award</span>
+            <a class="tl-permalink" href="#2024-outstanding-doctoral-ta-award" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Outstanding Doctoral TA Award</h3>
           <ul class="tl-bullets">
             <li>Received the department's Outstanding Doctoral TA Award.</li>
@@ -431,11 +580,14 @@
           <p class="tl-meta">Department of Environmental Health &amp; Engineering, <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2024-airdc-workshop-at-george-mason" data-cat="conference">
         <div class="tl-date">Jun</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2024-airdc-workshop-at-george-mason" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AIRDC workshop at George Mason</h3>
           <ul class="tl-bullets">
             <li>Attended the 2nd Annual Greater Washington, D.C. <a href="https://science.gmu.edu/events/airdc" target="_blank" rel="noopener">Air Quality Research and Development Consortium (AIRDC)</a> Workshop.</li>
@@ -444,27 +596,33 @@
           <p class="tl-meta">Monday, June 17, 2024 &nbsp;·&nbsp; <em>George Mason University, Fairfax, VA</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2024-first-first-author-paper-sulfuryl-fluoride" data-cat="paper">
         <div class="tl-date">Apr</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2024-first-first-author-paper-sulfuryl-fluoride" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">First first-author paper: sulfuryl fluoride</h3>
           <ul class="tl-bullets">
             <li>Published <a href="https://doi.org/10.1038/s43247-024-01294-x" target="_blank" rel="noopener">California dominates U.S. emissions of the pesticide and potent greenhouse gas sulfuryl fluoride</a> in <em>Communications Earth &amp; Environment</em>.</li>
             <li>Using NOAA GGGRN measurements and a geostatistical inverse model, we found California emits 60–85% of U.S. SO&#8322;F&#8322; (0.26 ± 0.10 Gg/yr), equal to 5.5–12% of global emissions.</li>
-            <li>Coordinated an embargoed press release with the journal and the JHU Hub; the paper went live on April 3.</li>
+            <li>Accepted on February 28 after a long road through several journals (see June 2023); coordinated an embargoed press release with the journal and the JHU Hub, and the paper went live on April 3.</li>
             <li>Fielded interview requests from the Los Angeles Times, Inside Climate News, and Southern California Public Radio, and recorded audio for Sea Change Radio.</li>
             <li>Coverage followed in The Guardian, Scientific American, The Hill, the San Francisco Chronicle, and Courthouse News (<a href="media.html">all media</a>).</li>
           </ul>
           <p class="tl-meta"><strong>D C Gaeta</strong>, J Mühle, I J Vimont, M Crotwell, L Hu, J B Miller, K McKain, B C Baier, M Zhang, J Bao, B R Miller, S M Miller &nbsp;·&nbsp; <em>Commun. Earth Environ.</em> 5, 161</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="fieldwork">
+      <article class="tl-item" id="2024-death-valley-field-course-year-three" data-cat="fieldwork">
         <div class="tl-date">Spring</div>
         <div class="tl-dot tl-dot--fieldwork" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+            <a class="tl-permalink" href="#2024-death-valley-field-course-year-three" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Death Valley field course, year three</h3>
           <ul class="tl-bullets">
             <li>Co-led our 8-day <em>Case Studies in Climate Change</em> field course (EN.570.321) with Prof. Scot Miller for ten undergraduates.</li>
@@ -477,23 +635,29 @@
     </div>
     <div class="tl-year" id="y2023">
       <h2 class="tl-year-label"><span>2023</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2023-agu-2023-talk-on-california-methyl-bromide-trends" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2023-agu-2023-talk-on-california-methyl-bromide-trends" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AGU 2023: talk on California methyl bromide trends</h3>
           <ul class="tl-bullets">
-            <li>Gave an oral talk, <em>Trends in California's methyl bromide emissions from 2004–2022 estimated using atmospheric measurements and inverse modeling</em> (<a href="https://ui.adsabs.harvard.edu/abs/2023AGUFM.A24I..08G/abstract" target="_blank" rel="noopener">A24I-08</a>).</li>
+            <li>Gave an oral talk, <a href="https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1443955" target="_blank" rel="noopener"><em>Trends in California's methyl bromide emissions from 2004–2022 estimated using atmospheric measurements and inverse modeling</em></a> (A24I-08).</li>
           </ul>
           <p class="tl-meta">Session: Scientific Impact of Long-Term Observations of the Atmosphere &nbsp;·&nbsp; <em>San Francisco, CA</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="teaching">
+      <article class="tl-item" id="2023-taught-my-own-course" data-cat="teaching">
         <div class="tl-date">Fall</div>
         <div class="tl-dot tl-dot--teaching" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--teaching">Teaching</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--teaching">Teaching</span>
+            <a class="tl-permalink" href="#2023-taught-my-own-course" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Taught my own course</h3>
           <ul class="tl-bullets">
             <li>Wrote a proposal to JHU's Special Opportunities for Undergraduate Learning (SOUL) program and was funded to teach a new 1-credit seminar, <em>Greenhouse Gases in Earth's Atmosphere</em> (AS.360.111).</li>
@@ -502,11 +666,14 @@
           <p class="tl-meta"><em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2023-passed-my-doctoral-qualifying-exam-dqe" data-cat="milestone">
         <div class="tl-date">Jul</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2023-passed-my-doctoral-qualifying-exam-dqe" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Passed my Doctoral Qualifying Exam (DQE)</h3>
           <ul class="tl-bullets">
             <li>Defended my DQE proposal in July before a committee of Environmental Health &amp; Engineering faculty, including Scot Miller, Peter DeCarlo, Ben Hobbs, and Kirsten Koehler.</li>
@@ -515,11 +682,14 @@
           <p class="tl-meta">Department of Environmental Health &amp; Engineering, <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="paper">
+      <article class="tl-item" id="2023-paper-published-transport-variability-and-u-s-methane-trends" data-cat="paper">
         <div class="tl-date">Jul</div>
         <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--paper">Paper</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2023-paper-published-transport-variability-and-u-s-methane-trends" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Paper published: transport variability and U.S. methane trends</h3>
           <ul class="tl-bullets">
             <li>Our paper <a href="https://doi.org/10.1029/2022gl100366" target="_blank" rel="noopener">Inter-annual variability in atmospheric transport complicates estimation of US methane emissions trends</a> came out in <em>Geophysical Research Letters</em>, led by Leyang Feng.</li>
@@ -527,11 +697,14 @@
           <p class="tl-meta">L Feng, S Tavakkoli, S M Jordaan, A E Andrews, J S Benmergui, D W Waugh, M Zhang, <strong>D C Gaeta</strong>, S M Miller &nbsp;·&nbsp; <em>GRL</em> 50, e2022GL100366</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2023-airdc-workshop" data-cat="conference">
         <div class="tl-date">Summer</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2023-airdc-workshop" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AIRDC workshop</h3>
           <ul class="tl-bullets">
             <li>Attended the Greater Washington, D.C. <a href="https://science.gmu.edu/events/airdc" target="_blank" rel="noopener">Air Quality Research and Development Consortium (AIRDC)</a> Workshop, a regional meeting of air quality and atmospheric composition researchers.</li>
@@ -539,11 +712,14 @@
           <p class="tl-meta"><em>Washington, D.C. area</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="award">
+      <article class="tl-item" id="2023-two-awards-from-my-department" data-cat="award">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--award" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--award">Award</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--award">Award</span>
+            <a class="tl-permalink" href="#2023-two-awards-from-my-department" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Two awards from my department</h3>
           <ul class="tl-bullets">
             <li>Received the Geyh-Bouwer Trainee Practice Award, which recognizes students whose application of science benefits the environment or public health.</li>
@@ -552,24 +728,47 @@
           <p class="tl-meta">Department of Environmental Health &amp; Engineering, <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2023-elected-to-university-and-graduate-student-councils" data-cat="outreach">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2023-elected-to-university-and-graduate-student-councils" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Elected to university and graduate student councils</h3>
           <ul class="tl-bullets">
-            <li>Elected my department's representative to the <a href="https://sustainability.jhu.edu/who-we-are/slc/" target="_blank" rel="noopener">JHU Sustainability Leadership Council</a> (2023–2025), where I also reviewed proposals for the Campus as a Living Lab grant program.</li>
-            <li>Elected my department's representative to the Graduate Representative Organization for the Homewood campus (2023–2024).</li>
+            <li>Elected the Environmental Health &amp; Engineering Student Organization (EHESO) representative to the <a href="https://sustainability.jhu.edu/who-we-are/slc/" target="_blank" rel="noopener">JHU Sustainability Leadership Council</a> (2023–2025), where I also reviewed proposals for the Campus as a Living Lab grant program.</li>
+            <li>Also served as the EHESO representative to the Graduate Representative Organization for the Homewood campus (2023–2024).</li>
           </ul>
           <p class="tl-meta"><em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="fieldwork">
+      <article class="tl-item" id="2023-sent-the-sulfuryl-fluoride-paper-out-for-submission" data-cat="paper">
+        <div class="tl-date">Jun</div>
+        <div class="tl-dot tl-dot--paper" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--paper">Paper</span>
+            <a class="tl-permalink" href="#2023-sent-the-sulfuryl-fluoride-paper-out-for-submission" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">Sent the sulfuryl fluoride paper out for submission</h3>
+          <ul class="tl-bullets">
+            <li>Shared the final draft of the SO&#8322;F&#8322; emissions manuscript with all co-authors on June 9, aiming for PNAS, and collected sign-offs over the following weeks.</li>
+            <li>By early September the paper had gone to <em>Nature Climate Change</em> and then <em>Nature Communications</em> without success, before transferring to <em>Communications Earth &amp; Environment</em>.</li>
+            <li>Reviews came back from <em>Communications Earth &amp; Environment</em> in October, and I worked through revisions into January.</li>
+          </ul>
+          <p class="tl-meta">With co-authors at JHU, NOAA GML, Scripps, and Clemson</p>
+        </div>
+      </article>
+      <article class="tl-item" id="2023-death-valley-field-course-year-two" data-cat="fieldwork">
         <div class="tl-date">Spring</div>
         <div class="tl-dot tl-dot--fieldwork" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+            <a class="tl-permalink" href="#2023-death-valley-field-course-year-two" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Death Valley field course, year two</h3>
           <ul class="tl-bullets">
             <li>Co-led our 8-day <em>Case Studies in Climate Change</em> field course (EN.570.321) with Prof. Scot Miller for ten undergraduates.</li>
@@ -579,11 +778,14 @@
           <p class="tl-meta">With Prof. Scot M. Miller &nbsp;·&nbsp; <em>Death Valley National Park and the Eastern Sierra, California</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2023-shared-our-sulfuryl-fluoride-results-with-the-bay-area-air-d" data-cat="outreach">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2023-shared-our-sulfuryl-fluoride-results-with-the-bay-area-air-d" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Shared our sulfuryl fluoride results with the Bay Area air district</h3>
           <ul class="tl-bullets">
             <li>Sent our AGU 2022 poster and manuscript status to a scientist at the Bay Area Air Quality Management District who had reached out about our SO&#8322;F&#8322; emissions work.</li>
@@ -594,24 +796,31 @@
     </div>
     <div class="tl-year" id="y2022">
       <h2 class="tl-year-label"><span>2022</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2022-agu-2022-constraining-u-s-sulfuryl-fluoride-emissions" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2022-agu-2022-constraining-u-s-sulfuryl-fluoride-emissions" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AGU 2022: constraining U.S. sulfuryl fluoride emissions</h3>
           <ul class="tl-bullets">
-            <li>Presented a poster, <em>Constraining U.S. sulfuryl fluoride emissions with atmospheric measurements and a geostatistical inverse model</em> (<a href="https://ui.adsabs.harvard.edu/abs/2022AGUFM.A52Q1204G/abstract" target="_blank" rel="noopener">A52Q-1204</a>).</li>
+            <li>Presented a poster, <a href="https://agu.confex.com/agu/fm22/meetingapp.cgi/Paper/1067316" target="_blank" rel="noopener"><em>Constraining U.S. sulfuryl fluoride emissions with atmospheric measurements and a geostatistical inverse model</em></a> (A52Q-1204).</li>
+            <li>Also a co-author on Mingyang Zhang's abstract, <a href="https://agu.confex.com/agu/fm22/meetingapp.cgi/Paper/1112619" target="_blank" rel="noopener"><em>Trends in US ethane emissions and implications for fugitive leaks from the oil and gas industries</em></a>.</li>
             <li>Back in Chicago, where I did my master's.</li>
           </ul>
           <p class="tl-meta">Session: Stratospheric and Tropospheric Composition Changes &nbsp;·&nbsp; <em>Chicago, IL</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2022-airdc-workshop" data-cat="conference">
         <div class="tl-date">Summer</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2022-airdc-workshop" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AIRDC workshop</h3>
           <ul class="tl-bullets">
             <li>Attended the Greater Washington, D.C. <a href="https://science.gmu.edu/events/airdc" target="_blank" rel="noopener">Air Quality Research and Development Consortium (AIRDC)</a> Workshop.</li>
@@ -619,11 +828,14 @@
           <p class="tl-meta"><em>Washington, D.C. area</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="teaching">
+      <article class="tl-item" id="2022-mentoring-baltimore-high-school-researchers" data-cat="teaching">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--teaching" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--teaching">Teaching</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--teaching">Teaching</span>
+            <a class="tl-permalink" href="#2022-mentoring-baltimore-high-school-researchers" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Mentoring Baltimore high school researchers</h3>
           <ul class="tl-bullets">
             <li>Began mentoring two Baltimore City high school students from Western High School through paid research internships in the JHU <a href="https://engineering.jhu.edu/outreach/ceo-programs/wise/" target="_blank" rel="noopener">WISE</a> program (2022–2023).</li>
@@ -632,11 +844,14 @@
           <p class="tl-meta">Center for Educational Outreach, <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2022-baltimore-2018-2020-greenhouse-gas-inventory" data-cat="research">
         <div class="tl-date">May</div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2022-baltimore-2018-2020-greenhouse-gas-inventory" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Baltimore 2018–2020 greenhouse gas inventory</h3>
           <ul class="tl-bullets">
             <li>Sent the Baltimore Office of Sustainability our draft of the city's official <a href="https://www.baltimoresustainability.org/wp-content/uploads/2023/04/2020_Baltimore_GHG_inventory_v2.pdf" target="_blank" rel="noopener">Greenhouse Gas Emissions Inventory for 2018–2020</a>.</li>
@@ -646,11 +861,14 @@
           <p class="tl-meta"><strong>D C Gaeta</strong>, J Alumbro, K Negandhi, C Liang, D Moon, S M Miller &nbsp;·&nbsp; <em>Baltimore Office of Sustainability</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="fieldwork">
+      <article class="tl-item" id="2022-first-death-valley-field-course" data-cat="fieldwork">
         <div class="tl-date">Mar</div>
         <div class="tl-dot tl-dot--fieldwork" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+            <a class="tl-permalink" href="#2022-first-death-valley-field-course" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">First Death Valley field course</h3>
           <ul class="tl-bullets">
             <li>Flew to Las Vegas, picked up the minivan, and co-led the first trip of our new <em>Case Studies in Climate Change</em> field course (EN.570.321) with Prof. Scot Miller.</li>
@@ -660,11 +878,14 @@
           <p class="tl-meta">March 19–26, 2022 &nbsp;·&nbsp; <em>Death Valley National Park and the Eastern Sierra, California</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="media">
+      <article class="tl-item" id="2022-featured-in-the-jhu-hub" data-cat="media">
         <div class="tl-date">Mar</div>
         <div class="tl-dot tl-dot--media" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--media">Media</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--media">Media</span>
+            <a class="tl-permalink" href="#2022-featured-in-the-jhu-hub" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Featured in the JHU Hub</h3>
           <ul class="tl-bullets">
             <li>The JHU Hub published <a href="https://hub.jhu.edu/2022/03/11/sulfuryl-fluoride-greenhouse-emissions/" target="_blank" rel="noopener">Researcher sheds light on the main source of a rare but destructive greenhouse gas</a>, a profile of my sulfuryl fluoride work.</li>
@@ -673,11 +894,14 @@
           <p class="tl-meta">March 11, 2022 &nbsp;·&nbsp; <em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="media">
+      <article class="tl-item" id="2022-first-press-coverage-eos" data-cat="media">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--media" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--media">Media</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--media">Media</span>
+            <a class="tl-permalink" href="#2022-first-press-coverage-eos" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">First press coverage: Eos</h3>
           <ul class="tl-bullets">
             <li>Eos published <a href="https://eos.org/articles/termite-fumigation-in-california-is-fueling-the-rise-of-a-rare-greenhouse-gas" target="_blank" rel="noopener">Termite Fumigation in California Is Fueling the Rise of a Rare Greenhouse Gas</a>, following my AGU 2021 poster.</li>
@@ -689,38 +913,64 @@
     </div>
     <div class="tl-year" id="y2021">
       <h2 class="tl-year-label"><span>2021</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2021-agu-2021-greater-los-angeles-and-sulfuryl-fluoride" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2021-agu-2021-greater-los-angeles-and-sulfuryl-fluoride" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AGU 2021: Greater Los Angeles and sulfuryl fluoride</h3>
           <ul class="tl-bullets">
-            <li>Presented a poster, <em>Greater Los Angeles Area dominates U.S. emissions of sulfuryl fluoride, a potent greenhouse gas</em> (A15K-1789).</li>
-            <li>Narrowed the California signal down to the Los Angeles basin.</li>
+            <li>Presented a poster, <a href="https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/821026" target="_blank" rel="noopener"><em>Greater Los Angeles Area dominates U.S. emissions of sulfuryl fluoride, a potent greenhouse gas</em></a> (A15K-1789).</li>
+            <li>Narrowed the California signal down to the Greater Los Angeles Area, with the Bay Area second.</li>
+            <li>Also a co-author on Mingyang Zhang's abstract, <a href="https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/799907" target="_blank" rel="noopener"><em>Ethane emissions from U.S. oil and natural gas operations and associated impacts to surface ozone levels</em></a>.</li>
           </ul>
           <p class="tl-meta">Session: Constraining Greenhouse Gas Exchange Processes Using Remote Sensing and in Situ Observations &nbsp;·&nbsp; <em>New Orleans, LA</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="teaching">
+      <article class="tl-item" id="2021-ta-for-a-brand-new-climate-change-seminar" data-cat="teaching">
         <div class="tl-date">Fall</div>
         <div class="tl-dot tl-dot--teaching" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--teaching">Teaching</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--teaching">Teaching</span>
+            <a class="tl-permalink" href="#2021-ta-for-a-brand-new-climate-change-seminar" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">TA for a brand-new climate change seminar</h3>
           <ul class="tl-bullets">
             <li>TA'd the first offering of <em>Case Studies in Climate Change: California</em> (EN.570.320), co-developed by Prof. Scot Miller with a JHU Teaching Innovation Grant.</li>
             <li>The seminar prepared students for the spring field trip to Death Valley and the Eastern Sierra, after pandemic delays.</li>
-            <li>Ran in-class exercises, including an adaptation and mitigation activity.</li>
+            <li>Ran in-class exercises, including an adaptation and mitigation activity, and invited Prof. Sarah Aarons (Scripps) to guest lecture on dust, drought, and the Sierra Nevada on October 6.</li>
           </ul>
           <p class="tl-meta"><em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="teaching">
+      <article class="tl-item" id="2021-joined-the-new-sulfuryl-fluoride-project" data-cat="research">
+        <div class="tl-date">Sep</div>
+        <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
+        <div class="tl-card fade-up">
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2021-joined-the-new-sulfuryl-fluoride-project" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
+          <h3 class="tl-title">Joined the new sulfuryl fluoride project</h3>
+          <ul class="tl-bullets">
+            <li>Scot Miller and Jens Mühle (Scripps) were awarded a grant to study U.S. emissions of sulfuryl fluoride, and I joined as the project's Ph.D. student.</li>
+            <li>This became the first chapter of my dissertation.</li>
+          </ul>
+          <p class="tl-meta"><em>Johns Hopkins University &amp; Scripps Institution of Oceanography</em></p>
+        </div>
+      </article>
+      <article class="tl-item" id="2021-started-mentoring-undergraduate-researchers" data-cat="teaching">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--teaching" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--teaching">Teaching</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--teaching">Teaching</span>
+            <a class="tl-permalink" href="#2021-started-mentoring-undergraduate-researchers" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started mentoring undergraduate researchers</h3>
           <ul class="tl-bullets">
             <li>Began mentoring undergraduates in the Greenhouse Gas Lab on urban emissions in Baltimore and other U.S. cities (2021–2025).</li>
@@ -731,24 +981,30 @@
     </div>
     <div class="tl-year" id="y2020">
       <h2 class="tl-year-label"><span>2020</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2020-agu-2020-virtual-california-and-sulfuryl-fluoride" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2020-agu-2020-virtual-california-and-sulfuryl-fluoride" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">AGU 2020 (virtual): California and sulfuryl fluoride</h3>
           <ul class="tl-bullets">
-            <li>Gave a lightning talk and iPoster, <em>California dominates U.S. emissions of sulfuryl fluoride, a potent greenhouse gas</em> (<a href="https://ui.adsabs.harvard.edu/abs/2020AGUFMA128...11G/abstract" target="_blank" rel="noopener">A128-11</a>).</li>
+            <li>Gave a lightning talk and iPoster, <a href="https://agu.confex.com/agu/fm20/meetingapp.cgi/Paper/708080" target="_blank" rel="noopener"><em>California dominates U.S. emissions of sulfuryl fluoride, a potent greenhouse gas</em></a> (A128-11).</li>
             <li>First results from my Ph.D., presented virtually during the pandemic.</li>
           </ul>
           <p class="tl-meta">Session: Constraining Greenhouse Gas Exchange Processes Using Remote Sensing and in Situ Observations &nbsp;·&nbsp; <em>Virtual</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2020-baltimore-2017-greenhouse-gas-inventory" data-cat="research">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2020-baltimore-2017-greenhouse-gas-inventory" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Baltimore 2017 greenhouse gas inventory</h3>
           <ul class="tl-bullets">
             <li>Led the compilation, analysis, and writing of Baltimore's official <a href="https://www.baltimoresustainability.org/wp-content/uploads/2021/09/2017_Baltimore_Inventory_v5-1.pdf" target="_blank" rel="noopener">2017 Greenhouse Gas Emissions Inventory Report</a> for the Baltimore Office of Sustainability.</li>
@@ -757,11 +1013,14 @@
           <p class="tl-meta"><strong>D C Gaeta</strong>, K Negandhi, C Liang, M Kleckner, S M Miller</p>
         </div>
       </article>
-      <article class="tl-item" data-cat="award">
+      <article class="tl-item" id="2020-travel-grant-and-science-policy-group" data-cat="award">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--award" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--award">Award</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--award">Award</span>
+            <a class="tl-permalink" href="#2020-travel-grant-and-science-policy-group" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Travel grant and Science Policy Group</h3>
           <ul class="tl-bullets">
             <li>Received a Graduate Representative Organization (GRO) Conference Travel Grant.</li>
@@ -770,11 +1029,14 @@
           <p class="tl-meta"><em>Johns Hopkins University</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2020-started-my-ph-d-at-johns-hopkins" data-cat="milestone">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2020-started-my-ph-d-at-johns-hopkins" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started my Ph.D. at Johns Hopkins</h3>
           <ul class="tl-bullets">
             <li>Moved from Chicago to Baltimore to start my Ph.D. in Geography &amp; Environmental Engineering in Prof. Scot Miller's <a href="https://greenhousegaslab.org/" target="_blank" rel="noopener">Greenhouse Gas Lab</a>.</li>
@@ -786,11 +1048,14 @@
     </div>
     <div class="tl-year" id="y2019">
       <h2 class="tl-year-label"><span>2019</span></h2>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2019-india-health-insurance-experiment" data-cat="research">
         <div class="tl-date">Summer</div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2019-india-health-insurance-experiment" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">India Health Insurance Experiment</h3>
           <ul class="tl-bullets">
             <li>Joined calls with the IHIE research team led by Prof. Anup Malani.</li>
@@ -800,11 +1065,14 @@
           <p class="tl-meta"><em>University of Chicago</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2019-wage-insurance-model-for-the-sewa-experiment" data-cat="research">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2019-wage-insurance-model-for-the-sewa-experiment" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Wage insurance model for the SEWA experiment</h3>
           <ul class="tl-bullets">
             <li>Developed Python code and algorithms for a discrete-choice economic model to calculate optimal wage insurance premiums for the Self Employed Women's Association (SEWA) Wage Insurance Experiment.</li>
@@ -813,11 +1081,14 @@
           <p class="tl-meta"><em>University of Chicago</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2019-started-as-an-applied-data-governance-fellow" data-cat="milestone">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2019-started-as-an-applied-data-governance-fellow" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started as an Applied Data &amp; Governance Fellow</h3>
           <ul class="tl-bullets">
             <li>Began a one-year fellowship with the International Innovation Corps at the University of Chicago, adding data-driven policy research to my physical sciences background.</li>
@@ -829,11 +1100,14 @@
     </div>
     <div class="tl-year" id="y2018">
       <h2 class="tl-year-label"><span>2018</span></h2>
-      <article class="tl-item" data-cat="conference">
+      <article class="tl-item" id="2018-my-first-conference-agu-2018" data-cat="conference">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--conference" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--conference">Conference</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--conference">Conference</span>
+            <a class="tl-permalink" href="#2018-my-first-conference-agu-2018" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">My first conference: AGU 2018</h3>
           <ul class="tl-bullets">
             <li>Presented my M.S. thesis as a poster, <em>An adjoint trajectory model of the perturbed carbon cycle</em> (<a href="https://ui.adsabs.harvard.edu/abs/2018AGUFMGC31D1291G/abstract" target="_blank" rel="noopener">GC31D-1291</a>), with Prof. Doug MacAyeal.</li>
@@ -844,26 +1118,33 @@
           <p class="tl-meta">Session: Coupled Human–Natural Systems and Global Environmental Change &nbsp;·&nbsp; <em>Washington, D.C.</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2018-testified-at-the-epa-hearing-on-the-clean-power-plan-replace" data-cat="outreach">
         <div class="tl-date">Oct</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2018-testified-at-the-epa-hearing-on-the-clean-power-plan-replace" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Testified at the EPA hearing on the Clean Power Plan replacement</h3>
           <ul class="tl-bullets">
             <li>Testified at the EPA's only public hearing on the proposed "Affordable Clean Energy" rule, the replacement for the Clean Power Plan.</li>
             <li>Spoke as an independent citizen scientist with a master's in Geophysical Sciences, opposing the rule.</li>
             <li>Argued that energy infrastructure built today lasts for decades, and that the clean energy transition is the moon race of my generation.</li>
             <li>Connected with the Union of Concerned Scientists' Midwest team, whom I had also worked with on a climate art installation.</li>
+            <li><details class="tl-details"><summary>Read my testimony</summary><p>My name is Dylan Gaeta. I am a trained Earth/climate scientist and I would like to come on the record as an independent; I do not wish to represent an organization or institution, but simply speak as a concerned citizen scientist.</p><p>With that being said, I would like to give myself a little bit of credibility. I have a Master’s degree in Geophysical Sciences from the University of Chicago. I’ve extensively studied the fundamental physics and chemistry that govern the behavior of Earth’s climate, atmosphere, and biogeochemical cycles, and I wrote my M.S. thesis on a model that describes the human impact on Earth’s carbon cycle; a model that I built under the mentorship of a UChicago professor, and continue to improve today.</p><p>I am here as a somewhat younger citizen of our country to echo the sentiments of many other millennials. I am 24 years old. I have many more years left on this Earth than nearly all of the people who will be making the decision about whether to repeal the Clean Power Plan. I would like to respectfully ask those people to strongly consider the testimonies of people my age, and to consider the quality of the air that myself and my children will breathe should the Clean Power Plan be repealed.</p><p>We know from looking at our coal and nuclear plants that energy infrastructure lasts several decades, and the decisions that are made today about how to generate electricity for our country will last as long as the infrastructure remains functional. I vehemently oppose the “Affordable Clean Energy” plan because it does not provide an incentive for our energy sector to build the infrastructure to generate carbon-free energy, and in fact it would allow the production of coal-derived energy to increase. (I would ask anyone who claims that coal can be “clean” whether they would be comfortable lighting a coal fire in an indoor fireplace with your newborn baby sleeping in the room, every single day.)</p><p>As the Intergovernmental Panel on Climate Change (IPCC) and numerous other independent groups of Earth scientists, economists, and public policy experts have made abundantly clear, it requires concerted global action of all major nations to achieve the carbon dioxide and methane emission rates required to keep the globally-reaching impacts of climate change below a specific level of damage. The “Affordable Clean Energy” plan enables states and individual power plants to effectively withdraw from the stated emission goals of the U.S., which immediately compromises the “concerted global” component of “it requires concerted global action.”</p><p>I can tell you from personal interactions with my Chinese colleagues that millennial-aged scientists, engineers, and policy makers in China are prepared to lead the world in the challenge to reduce and ultimately eliminate human dependence on coal, oil, natural gas, and other fossil fuels. They recognize that the United States is faltering on this front, and they are preparing to take the reins as the world-leader in carbon-free energy.</p><p>The global clean energy challenge is the moon race of our generation. The race to eliminate health-damaging pollutants from our energy system, and to build technologies and infrastructure that will allow us to supply energy to all U.S. residents without releasing carbon dioxide into the atmosphere and ocean, is as important to us as beating the Soviet Union to the moon was to the U.S. citizens of the 50’s and 60’s.</p><p>I strongly oppose the administration’s proposed “Affordable Clean Energy” plan. The reasons I have stated all coincide with the stated objectives of the EPA to protect human health and the environment. It is not the EPA’s job to protect the coal industry. Furthermore, my reasoning is deeply rooted in a desire to see the United States rise to the top of the global stage on energy and environment issues, which, again, are the defining global issues of my generation. I am testifying today because I believe that my country has the ability to rise to the top of this challenge, but only if we treat it with the same urgency as we treated the race to the moon.</p><p>Thank you for the opportunity to testify.</p><p>Dylan C. Gaeta</p></details></li>
           </ul>
           <p class="tl-meta">October 1, 2018 &nbsp;·&nbsp; Ralph H. Metcalfe Federal Building, <em>Chicago, IL</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2018-finished-my-m-s-thesis" data-cat="milestone">
         <div class="tl-date">Aug</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2018-finished-my-m-s-thesis" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Finished my M.S. thesis</h3>
           <ul class="tl-bullets">
             <li>Sent the final version of <a href="https://doi.org/10.6082/UCHICAGO.3551" target="_blank" rel="noopener"><em>An adjoint trajectory model of the perturbed carbon cycle</em></a> to my committee.</li>
@@ -873,11 +1154,14 @@
           <p class="tl-meta">Advisor: Prof. Douglas MacAyeal &nbsp;·&nbsp; <em>The University of Chicago</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2018-joined-the-rochester-young-alumni-council" data-cat="outreach">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2018-joined-the-rochester-young-alumni-council" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Joined the Rochester Young Alumni Council</h3>
           <ul class="tl-bullets">
             <li>Joined the University of Rochester Young Alumni Council, Chicago Network (2018–2023).</li>
@@ -888,11 +1172,14 @@
     </div>
     <div class="tl-year" id="y2017">
       <h2 class="tl-year-label"><span>2017</span></h2>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2017-ran-the-climate-science-colab-at-the-chicago-community-clima" data-cat="outreach">
         <div class="tl-date">Dec</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2017-ran-the-climate-science-colab-at-the-chicago-community-clima" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Ran the Climate Science CoLab at the Chicago Community Climate Forum</h3>
           <ul class="tl-bullets">
             <li>Organized a team of UChicago climate scientists to staff the Climate Science CoLab at the Chicago Community Climate Forum.</li>
@@ -903,11 +1190,14 @@
           <p class="tl-meta">December 3, 2017 &nbsp;·&nbsp; The Field Museum, <em>Chicago, IL</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="fieldwork">
+      <article class="tl-item" id="2017-stratoclim-campaign-in-kathmandu-nepal" data-cat="fieldwork">
         <div class="tl-date">Jul</div>
         <div class="tl-dot tl-dot--fieldwork" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--fieldwork">Fieldwork</span>
+            <a class="tl-permalink" href="#2017-stratoclim-campaign-in-kathmandu-nepal" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">StratoClim campaign in Kathmandu, Nepal</h3>
           <ul class="tl-bullets">
             <li>Flew to Kathmandu for the StratoClim Asian Summer Monsoon aircraft campaign.</li>
@@ -918,11 +1208,14 @@
           <p class="tl-meta">July–August 2017 &nbsp;·&nbsp; <em>Kathmandu, Nepal</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2017-co-organizing-the-climate-and-energy-lunch-learn" data-cat="outreach">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2017-co-organizing-the-climate-and-energy-lunch-learn" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Co-organizing the Climate and Energy Lunch &amp; Learn</h3>
           <ul class="tl-bullets">
             <li>Co-organized the weekly Climate and Energy Student Lunch &amp; Learn series: Thursdays at noon in Saieh Hall, with free food (2017–2018).</li>
@@ -930,11 +1223,14 @@
           <p class="tl-meta">EPIC/RDCEP, <em>The University of Chicago</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2017-march-for-science-chicago" data-cat="outreach">
         <div class="tl-date">Apr</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2017-march-for-science-chicago" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">March for Science Chicago</h3>
           <ul class="tl-bullets">
             <li>Took part in March for Science Chicago, which drew tens of thousands of people from Grant Park to the Field Museum.</li>
@@ -944,11 +1240,14 @@
           <p class="tl-meta">April 22, 2017 &nbsp;·&nbsp; Grant Park &amp; the Field Museum, <em>Chicago, IL</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="outreach">
+      <article class="tl-item" id="2017-organizing-for-the-march-for-science" data-cat="outreach">
         <div class="tl-date">Jan</div>
         <div class="tl-dot tl-dot--outreach" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--outreach">Outreach</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--outreach">Service &amp; outreach</span>
+            <a class="tl-permalink" href="#2017-organizing-for-the-march-for-science" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Organizing for the March for Science</h3>
           <ul class="tl-bullets">
             <li>Got involved with the organizers of March for Science Chicago.</li>
@@ -961,11 +1260,14 @@
     </div>
     <div class="tl-year" id="y2016">
       <h2 class="tl-year-label"><span>2016</span></h2>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2016-started-graduate-school-at-the-university-of-chicago" data-cat="milestone">
         <div class="tl-date">Aug</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2016-started-graduate-school-at-the-university-of-chicago" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started graduate school at the University of Chicago</h3>
           <ul class="tl-bullets">
             <li>Began my M.S. in Geophysical Sciences as a graduate research assistant.</li>
@@ -974,11 +1276,14 @@
           <p class="tl-meta">Department of the Geophysical Sciences &nbsp;·&nbsp; <em>The University of Chicago</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2016-graduated-from-the-university-of-rochester" data-cat="milestone">
         <div class="tl-date">May</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2016-graduated-from-the-university-of-rochester" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Graduated from the University of Rochester</h3>
           <ul class="tl-bullets">
             <li>Graduated cum laude with a B.S. in Applied Mathematics and a B.A. in Chemistry.</li>
@@ -991,11 +1296,14 @@
     </div>
     <div class="tl-year" id="y2015">
       <h2 class="tl-year-label"><span>2015</span></h2>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2015-nsf-international-reu-in-graz-austria" data-cat="research">
         <div class="tl-date">Summer</div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2015-nsf-international-reu-in-graz-austria" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">NSF International REU in Graz, Austria</h3>
           <ul class="tl-bullets">
             <li>Spent the summer at Graz University of Technology on an NSF International REU (iREU).</li>
@@ -1004,11 +1312,14 @@
           <p class="tl-meta">May–August 2015 &nbsp;·&nbsp; Institute for Chemistry and Technology of Materials &nbsp;·&nbsp; <em>Graz University of Technology, Graz, Austria</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="award">
+      <article class="tl-item" id="2015-junior-scholar-award" data-cat="award">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--award" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--award">Award</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--award">Award</span>
+            <a class="tl-permalink" href="#2015-junior-scholar-award" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Junior Scholar Award</h3>
           <ul class="tl-bullets">
             <li>Received the Junior Scholar Award from the Department of Chemistry.</li>
@@ -1019,11 +1330,14 @@
     </div>
     <div class="tl-year" id="y2014">
       <h2 class="tl-year-label"><span>2014</span></h2>
-      <article class="tl-item" data-cat="research">
+      <article class="tl-item" id="2014-mcnair-scholars-nsf-reu-research-in-the-krauss-lab" data-cat="research">
         <div class="tl-date">May</div>
         <div class="tl-dot tl-dot--research" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--research">Research</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--research">Research</span>
+            <a class="tl-permalink" href="#2014-mcnair-scholars-nsf-reu-research-in-the-krauss-lab" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">McNair Scholars / NSF REU research in the Krauss lab</h3>
           <ul class="tl-bullets">
             <li>Started a year of research in Prof. Todd Krauss's lab through the McNair Scholars Research Program and an NSF REU.</li>
@@ -1036,11 +1350,14 @@
     </div>
     <div class="tl-year" id="y2013">
       <h2 class="tl-year-label"><span>2013</span></h2>
-      <article class="tl-item" data-cat="award">
+      <article class="tl-item" id="2013-named-a-mcnair-scholar" data-cat="award">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--award" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--award">Award</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--award">Award</span>
+            <a class="tl-permalink" href="#2013-named-a-mcnair-scholar" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Named a McNair Scholar</h3>
           <ul class="tl-bullets">
             <li>Named a Ronald E. McNair Scholar (2013–2016), a U.S. Department of Education program that prepares undergraduates for doctoral study.</li>
@@ -1048,11 +1365,14 @@
           <p class="tl-meta"><em>University of Rochester</em></p>
         </div>
       </article>
-      <article class="tl-item" data-cat="teaching">
+      <article class="tl-item" id="2013-started-teaching-chemistry" data-cat="teaching">
         <div class="tl-date"></div>
         <div class="tl-dot tl-dot--teaching" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--teaching">Teaching</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--teaching">Teaching</span>
+            <a class="tl-permalink" href="#2013-started-teaching-chemistry" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started teaching chemistry</h3>
           <ul class="tl-bullets">
             <li>Began leading workshops and TAing chemistry courses (2013–2016), from general and organic chemistry to quantum chemistry, molecular thermodynamics, and molecular spectroscopy.</li>
@@ -1064,11 +1384,14 @@
     </div>
     <div class="tl-year" id="y2012">
       <h2 class="tl-year-label"><span>2012</span></h2>
-      <article class="tl-item" data-cat="milestone">
+      <article class="tl-item" id="2012-started-at-the-university-of-rochester" data-cat="milestone">
         <div class="tl-date">Aug</div>
         <div class="tl-dot tl-dot--milestone" aria-hidden="true"></div>
         <div class="tl-card fade-up">
-          <span class="tl-tag tl-tag--milestone">Milestone</span>
+          <div class="tl-card-head">
+            <span class="tl-tag tl-tag--milestone">Milestone</span>
+            <a class="tl-permalink" href="#2012-started-at-the-university-of-rochester" aria-label="Link to this entry" title="Copy link to this entry">#</a>
+          </div>
           <h3 class="tl-title">Started at the University of Rochester</h3>
           <ul class="tl-bullets">
             <li>Started my undergraduate studies, supported by a Dean's Scholarship, a New York State Scholarship for Academic Excellence, and a Chautauqua Region Community Foundation Scholarship.</li>
@@ -1078,7 +1401,7 @@
       </article>
     </div>
     </div>
-    <p class="tl-empty" hidden>No entries of this type yet.</p>
+    <p class="tl-empty" hidden>No entries match.</p>
   </div>
 </section>
 
@@ -1086,6 +1409,6 @@
   &copy; 2026 Dylan Gaeta &nbsp;·&nbsp; dylangaeta.com
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

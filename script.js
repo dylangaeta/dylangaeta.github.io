@@ -137,3 +137,76 @@ if (timeline) {
   }, { rootMargin: '-30% 0px -65% 0px' });
   years.forEach(y => yearObs.observe(y));
 }
+
+// News timeline: search, permalinks, and upcoming badges (only on pages with a timeline)
+if (timeline) {
+  const items = [...document.querySelectorAll('.tl-item')];
+  const searchBox = document.querySelector('.tl-search');
+  const emptyMsg = document.querySelector('.tl-empty');
+
+  // Upcoming: entries with an exact future date get a badge until that day passes
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  items.forEach(item => {
+    if (!item.dataset.when) return;
+    const when = new Date(item.dataset.when + 'T00:00:00');
+    if (when >= today) {
+      item.classList.add('is-upcoming');
+      const badge = document.createElement('span');
+      badge.className = 'tl-upcoming';
+      badge.textContent = 'Upcoming';
+      item.querySelector('.tl-tag').after(badge);
+    }
+  });
+
+  // Search: combine with the active category filter; matches every word typed
+  function activeCategory() {
+    return document.querySelector('.tl-filter.is-active').dataset.cat;
+  }
+  function applySearch() {
+    const words = searchBox.value.toLowerCase().split(/\s+/).filter(Boolean);
+    const cat = activeCategory();
+    let shown = 0;
+    document.querySelectorAll('.tl-year').forEach(year => {
+      let yearShown = 0;
+      year.querySelectorAll('.tl-item').forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const match = (cat === 'all' || item.dataset.cat === cat) && words.every(w => text.includes(w));
+        item.hidden = !match;
+        if (match) {
+          yearShown++;
+          item.querySelector('.tl-card').classList.add('visible');
+        }
+      });
+      year.hidden = yearShown === 0;
+      document.querySelector('.tl-jump[href="#' + year.id + '"]').hidden = yearShown === 0;
+      shown += yearShown;
+    });
+    emptyMsg.hidden = shown > 0;
+  }
+  searchBox.addEventListener('input', applySearch);
+  document.querySelectorAll('.tl-filter').forEach(btn => btn.addEventListener('click', applySearch));
+
+  // Permalinks: clicking "#" copies the entry's URL and updates the address bar
+  document.querySelectorAll('.tl-permalink').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const url = location.origin + location.pathname + a.getAttribute('href');
+      history.replaceState(null, '', a.getAttribute('href'));
+      navigator.clipboard.writeText(url).then(() => {
+        a.classList.add('is-copied');
+        setTimeout(() => a.classList.remove('is-copied'), 1500);
+      });
+    });
+  });
+
+  // Arriving from a shared link: reveal and highlight that entry
+  if (location.hash) {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target && target.classList.contains('tl-item')) {
+      target.classList.add('is-target');
+      target.querySelector('.tl-card').classList.add('visible');
+      target.scrollIntoView({ block: 'center' });
+    }
+  }
+}
