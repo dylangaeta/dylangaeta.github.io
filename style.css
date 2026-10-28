@@ -165,6 +165,7 @@ a:hover { text-decoration-color: var(--forest); }
 #cv { background: var(--surface); }
 #news { background: var(--bg); }
 #presentations { background: var(--surface); }
+#media { background: var(--surface); }
 body.subpage > section:first-of-type { padding-top: 3.5rem; }
 #contact { background: var(--surface); }
 .research-focus {
@@ -428,6 +429,13 @@ footer {
 .edu-year { font-family: var(--sans); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.05em; white-space: nowrap; padding-top: 3px; }
 
 /* ── RESPONSIVE ── */
+/* Nine nav links stop fitting on one row below ~960px, so stack the name above a scrollable link row */
+@media (max-width: 960px) {
+  nav { height: auto; flex-direction: column; align-items: flex-start; gap: 0.3rem; padding: 0.6rem 1rem 0.5rem; }
+  .nav-links { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; padding: 0.3rem 0.6rem; }
+}
 @media (max-width: 700px) {
   .hero { grid-template-columns: 1fr; gap: 1.5rem; }
   .hero-photo { width: 140px; height: 140px; }
@@ -435,9 +443,5 @@ footer {
   .rg { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .cv-box { flex-direction: column; align-items: flex-start; }
-  nav { height: auto; flex-direction: column; align-items: flex-start; gap: 0.3rem; padding: 0.6rem 1rem 0.5rem; }
-  .nav-links { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
-  .nav-links::-webkit-scrollbar { display: none; }
-  .nav-links a { white-space: nowrap; padding: 0.3rem 0.6rem; }
 
 }
