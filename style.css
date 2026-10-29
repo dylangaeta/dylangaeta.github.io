@@ -574,3 +574,5 @@ footer {
 .latest-item a { font-weight: 500; text-decoration: none; color: var(--text); }
 .latest-item a:hover { color: var(--forest); }
 .latest-more { font-size: 0.85rem; }
+.tl-text { font-size: 0.9rem; line-height: 1.68; color: var(--text); margin: 0 0 0.5rem; }
+.tl-text + .tl-meta, .tl-details + .tl-meta { margin-top: 0.15rem; }
